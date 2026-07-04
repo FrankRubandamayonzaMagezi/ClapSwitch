@@ -9,6 +9,12 @@ A Python project that detects hand claps using a computer microphone and toggles
 - 💡 Toggles a virtual switch between ON and OFF
 - ⚡ Built with Python, NumPy, and sounddevice
 
+## Example Output
+
+The screenshot below shows the program detecting a clap and changing the switch state.
+
+![Clap Detection Output](images/clap_output.png)
+
 ## Project Structure
 
 ```
@@ -65,4 +71,4 @@ python main.py
 
 ## Author
 
-Frank Magezi Rubandamayonza
+Frank Rubandamayonza Magezi
