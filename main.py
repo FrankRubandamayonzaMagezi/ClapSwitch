@@ -11,8 +11,8 @@ THRESHOLD = 0.25
 switch_on = False
 last_clap_time = 0
 
-print("🎙️ Microphone is LIVE! Listening for claps...")
-print("💡 [SWITCH STATUS]: OFF")
+print(" Microphone is LIVE! Listening for claps...")
+print(" [SWITCH STATUS]: OFF")
 print("------------------------------------------")
 
 
@@ -27,10 +27,10 @@ def audio_callback(indata, frames, time_info, status):
         switch_on = not switch_on
         last_clap_time = current_time
 
-        status_text = "💡 ON!" if switch_on else "🌑 OFF..."
+        status_text = " ON" if switch_on else " OFF"
 
         print(
-            f"💥 Clap Detected! Volume: {peak_volume:.2f} -> "
+            f" Clap Detected! Volume: {peak_volume:.2f} -> "
             f"[SWITCH STATUS]: {status_text}"
         )
 
@@ -46,4 +46,4 @@ try:
             time.sleep(1)
 
 except KeyboardInterrupt:
-    print("\n👋 Stopped listening.")
+    print("\n Stopped listening.")

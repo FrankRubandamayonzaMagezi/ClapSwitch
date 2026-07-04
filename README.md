@@ -4,10 +4,10 @@ A Python project that detects hand claps using a computer microphone and toggles
 
 ## Features
 
-- 🎙️ Real-time microphone monitoring
-- 👏 Detects hand claps
-- 💡 Toggles a virtual switch between ON and OFF
-- ⚡ Built with Python, NumPy, and sounddevice
+- Real-time microphone monitoring
+- Detects hand claps
+- Toggles a virtual switch between ON and OFF
+- Built with Python, NumPy, and sounddevice
 
 ## Example Output
 
@@ -55,8 +55,8 @@ python main.py
 ## Expected Output
 
 ```
-🎙️ Microphone is LIVE! Listening for claps...
-💡 [SWITCH STATUS]: OFF
+ Microphone is LIVE! Listening for claps...
+ [SWITCH STATUS]: OFF
 ------------------------------------------
 ```
 
