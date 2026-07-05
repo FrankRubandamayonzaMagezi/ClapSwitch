@@ -1,6 +1,10 @@
 import sounddevice as sd
 import numpy as np
 import time
+import serial
+
+arduino = serial.Serial("COM17", 9600)
+time.sleep(2)   # Wait for Arduino to reset
 
 # --- SETTINGS ---
 SAMPLE_RATE = 44100
@@ -26,6 +30,8 @@ def audio_callback(indata, frames, time_info, status):
     if peak_volume > THRESHOLD and (current_time - last_clap_time) > 0.5:
         switch_on = not switch_on
         last_clap_time = current_time
+
+        arduino.write(b'T')
 
         status_text = " ON" if switch_on else " OFF"
 
