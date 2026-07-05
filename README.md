@@ -16,7 +16,7 @@ A Python-based clap detection system that listens through the computer microphon
 
 The screenshot below shows the complete system in operation. When a clap is detected, the Python application updates the switch status and sends a serial command to the Arduino Uno which toggles the built-in LED (Pin 13).
 
-![Clap Detection Output](images/clap_output.png)
+![Clap Detection Output](images/clap_output.jpg)
 
 ## How It Works
 
